@@ -22,6 +22,7 @@ import Members from "./Members";
 import Header from "./Header";
 import Err404 from "./Err404";
 import DetailsCardBackofice from "./DetailsCardBackofice";
+import SampleComponent from "./SampleComponent";
 
 export {
   ListUser,
@@ -48,4 +49,5 @@ export {
   Header,
   Err404,
   DetailsCardBackofice,
+  SampleComponent,
 };
