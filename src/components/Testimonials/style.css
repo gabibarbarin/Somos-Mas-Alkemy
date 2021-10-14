@@ -1,0 +1,32 @@
+    /* .link-activity a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .link-activity a:hover{
+    text-decoration: none;
+    color: rgb(91, 200, 64);
+  } */
+
+  .link-activity a {
+    display: inline-block;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: all .5s ease;
+    transform-style: preserve-3d;
+    }
+    .link-activity a:after {
+    content: "Enlace";
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    background: rgb(117, 127, 214);
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+    }
+    .link-activity a:hover {
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+    }

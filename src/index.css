@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -13,6 +14,7 @@
   --color-gray-100: rgba(243, 244, 246, 1);
   --color-gray-200: rgba(229, 231, 235, 1);
   --color-gray-300: rgba(209, 213, 219, 1);
+  --color-gray-400: rgba(156, 163, 175, 1);
   --color-gray-500: rgba(107, 114, 128, 1);
   --color-gray-600: rgba(107, 114, 128, 1);
   --color-gray-700: rgba(75, 85, 99, 1);
@@ -35,9 +37,16 @@
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
+  --text-md: 1.05rem;
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
   --text-3xl: 1.875rem;
   --text-6xl: 3.75rem;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: none;
 }

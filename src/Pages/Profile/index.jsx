@@ -1,13 +1,15 @@
 import React from "react";
-import { Information } from '../../components';
+import { Information, UserForm } from "../../components";
+import { Switch, Route } from "react-router-dom";
 
-function Profile(){
-    return(
-        <div className="d-flex justify-content-center align-items-center" style={{height:'100vh'}}>
-            <Information />
-        </div>
-    ) 
+function Profile() {
+  return (
+    <div style={{ height: "90%" }}>
+      <Switch>
+        <Route exact path="/backoffice/profile/" component={Information} />
+      </Switch>
+    </div>
+  );
 }
-
 
 export default Profile;

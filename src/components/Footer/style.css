@@ -1,0 +1,100 @@
+/* @import url("../../index.css"); */
+
+footer {
+  background-color: var(--color-white);
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--color-gray-200);
+  margin-top: 2rem;
+}
+
+.footer-contact {
+  margin-top: 1.25rem;
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: var(--text-md);
+  color: var(--color-gray-600);
+  font-weight: 500;
+}
+.contact-item p {
+  line-height: 1.25;
+}
+
+.contact-item svg {
+  color: var(--color-gray-600);
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.8rem;
+  margin-left: 0.25rem;
+  flex-shrink: 0;
+}
+
+.footer-heading {
+  color: var(--color-gray-800);
+  font-weight: 600;
+  font-size: var(--text-3xl);
+}
+
+.footer-section-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section-item a {
+  font-family: Poppins;
+  color: var(--color-gray-500);
+  text-decoration: none;
+  font-size: var(--text-md);
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section-item a:hover {
+  color: var(--color-gray-800);
+}
+
+.footer-section-item svg {
+  color: var(--color-gray-700);
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-right: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section-item:hover svg {
+  color: var(--color-gray-800);
+}
+
+.b-left {
+  border-left: 1px solid var(--color-gray-300);
+}
+
+.bottom-footer {
+  margin-top: 0.5rem;
+  background-color: var(--color-gray-200);
+}
+
+.bottom-footer-content {
+  display: flex;
+  font-family: Poppins;
+  align-items: center;
+  padding: 1.7rem 0;
+  font-size: var(--text-md);
+  font-weight: 500;
+  color: var(--color-gray-700);
+}
+
+@media (max-width: 992px) {
+  .b-left {
+    border: none;
+  }
+  h2 {
+    text-align: left;
+  }
+}

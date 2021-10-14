@@ -1,0 +1,19 @@
+.image-organization__container{
+    width: 80%;
+    height: 40%;
+    margin: 0.5rem;
+    max-width: 40rem;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+}
+
+  .logo-image__organization{
+    width: 100%;
+  }
+
+  @media (min-width: 70rem) {
+
+    .image-organization__container {
+      width: 50vw;
+    }
+    
+  }

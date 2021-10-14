@@ -9,6 +9,8 @@ dist/
 
 # Compiled Java class files
 *.class
+.env
+
 
 # Compiled Python bytecode
 *.py[cod]
@@ -73,3 +75,5 @@ yarn-debug.log*
 yarn-error.log*
 
 package-lock.json
+
+.vscode

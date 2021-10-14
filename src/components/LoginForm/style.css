@@ -1,6 +1,6 @@
-body {
+.form-sms {
   background-color: var(--color-blue-10);
-  font-family: "Open Sans";
+  font-family: "Poppins";
 }
 
 .h-screen {
@@ -48,6 +48,7 @@ body {
 .btn.login {
   background-color: var(--color-blue-700);
   color: var(--color-white);
+  transition: all 0.5s ease;
 }
 
 .btn.login:hover {
@@ -78,4 +79,32 @@ body {
 
 .form-g input:not(:placeholder-shown) {
   background-color: var(--color-blue-50);
+}
+
+.redirect {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redirect p {
+  color: var(--color-gray-800);
+  font-weight: 500;
+  font-size: var(--text-md);
+  margin: 0;
+  display: flex;
+  height: 100%;
+}
+
+.redirect p a {
+  color: var(--color-blue-700);
+  text-decoration: none;
+  margin-left: 0.3rem;
+  display: inline-block;
+}
+
+.redirect p a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

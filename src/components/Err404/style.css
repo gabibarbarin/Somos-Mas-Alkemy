@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;600;700;800&display=swap");
+
+.error-container {
+  text-align: center;
+  font-family: Poppins !important;
+  font-size: 5rem;
+  font-weight: 800;
+  margin: auto;
+}
+.error-container > span {
+  display: inline-block;
+  line-height: 0.7;
+  position: relative;
+  color: var(--bs-yellow);
+}
+.error-container > span > span {
+  display: inline-block;
+  position: relative;
+}
+#firstNumber {
+  perspective: 1000px;
+  perspective-origin: 500% 50%;
+  color: var(--ck-color-base-error);
+}
+#firstNumber {
+  transform-origin: 50% 100% 0px;
+  /*transform: rotateX(0);*/
+  animation: easyoutelastic 8s infinite;
+}
+#secondNumber {
+  perspective: none;
+  perspective-origin: 50% 50%;
+  color: var(--ck-color-base-focus);
+}
+#thirdNumber {
+  transform-origin: 100% 100% 0px;
+  animation: rotatedrop 8s infinite;
+}
+.messageContainer {
+  overflow: hidden;
+}
+.messageError {
+  font-family: Poppins !important;
+  margin-left: 42%;
+  animation-duration: 3s;
+  animation-name: traslateMessage;
+  font-size: 0.8rem;
+}
+.inlineBlock {
+  display: block;
+}
+
+@keyframes easyoutelastic {
+  0% {
+    transform: rotateX(0);
+  }
+  9% {
+    transform: rotateX(210deg);
+  }
+  13% {
+    transform: rotateX(150deg);
+  }
+  16% {
+    transform: rotateX(200deg);
+  }
+  18% {
+    transform: rotateX(170deg);
+  }
+  20% {
+    transform: rotateX(180deg);
+  }
+  60% {
+    transform: rotateX(180deg);
+  }
+  80% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes rotatedrop {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(30deg);
+  }
+  15% {
+    transform: rotate(90deg);
+  }
+  70% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes traslateMessage {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 42%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .error-container {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .messageError {
+    font-family: Poppins !important;
+    margin-left: 43%;
+  }
+
+  @keyframes traslateMessage {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 43%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .error-container {
+    font-size: 8rem;
+  }
+  .messageError {
+    font-size: 1.2rem;
+    margin-left: 47%;
+  }
+  .inlineBlock {
+    display: inline-block;
+  }
+  @keyframes traslateMessage {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 47%;
+    }
+  }
+}

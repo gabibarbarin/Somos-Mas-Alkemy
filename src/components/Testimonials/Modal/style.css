@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+.modal-sms {
+  width: clamp(50%, 700px, 95%);
+  background-color: var(--color-gray-100);
+  padding: 1.7rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  overflow: hidden;
+}
+
+@media (max-width: 1199.98px) { 
+  .modal-sms {
+    padding: 1rem;
+  } 
+}
+
+
+.modal-sms .close-button {
+  border-radius: 100vh;
+  padding: 0.2rem;
+  transition: background-color 200ms ease-in-out;
+}
+.modal-sms .close-button:hover {
+  background-color: var(--color-gray-200);
+}
+
+.modal-sms .close-button:hover svg {
+  color: var(--color-gray-500);
+  transition: color 200ms ease-in-out;
+}
+
+.modal-sms-body {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.modal-sms-body h4 {
+  font-weight: 600;
+  color: var(--color-gray-800);
+  font-size: var(--text-2xl);
+}
+
+.modal-sms-body p {
+  font-weight: 400;
+  color: var(--color-gray-700);
+  line-height: 1.4rem;
+}
+
+.modal-sms-body form {
+  width: 95%;
+  flex-grow: 1;
+}
+
+.modal-icon {
+  display: flex;
+  padding: 0.3rem;
+  border-radius: 100vh;
+}
+
+.modal-icon svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.modal-icon.create {
+  background-color: var(--color-blue-100);
+}
+
+.modal-icon.create svg {
+  color: var(--color-blue-600);
+}
+
+.modal-icon.delete {
+  background-color: rgba(254, 202, 202, 1);
+}
+
+.modal-icon.delete svg {
+  color: rgba(239, 68, 68, 1);
+}
+
+.modal-sms-footer {
+  background-color: var(--color-gray-200);
+  margin: 0 -1.7rem -1.7rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1.7rem 1.6rem;
+
+  gap: 1rem;
+}
+
+.btn-cancel {
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-700);
+  font-weight: 600;
+}
+
+.btn-cancel:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+  font-weight: 600;
+}
+
+.btn-delete {
+  font-weight: 600;
+  background-color: rgba(239, 68, 68, 1);
+  color: var(--color-gray-200);
+}
+
+.btn-delete:hover {
+  color: var(--color-gray-200);
+  background-color: rgba(185, 28, 28, 1);
+}
+
+.btn-confirm {
+  font-weight: 600;
+  background-color: var(--color-blue-600);
+  color: var(--color-gray-200);
+}
+
+.btn-confirm:hover {
+  color: var(--color-gray-200);
+  background-color: var(--color-blue-700);
+
+}

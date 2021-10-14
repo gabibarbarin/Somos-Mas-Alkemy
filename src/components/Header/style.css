@@ -6,11 +6,12 @@ nav {
 }
 
 nav * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins";
 }
 
-.logo {
-  height: 2.5rem;
+.navbar-logo {
+  height: 3rem;
+  width: auto;
 }
 
 .user-image {
@@ -57,32 +58,24 @@ nav * {
 
 .secondary-btn:hover {
   background-color: var(--color-gray-100);
-  color: var(--color-blue-700);
+  color: var(--color-blue-600);
 }
 
 .nav-item {
-  margin-left: -0.75em;
-  transition: background-color 200ms ease-in-out;
+  color: var(--color-gray-500) !important;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--text-lg);
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  margin: 0 -0.25rem;
 }
 
 .nav-item:hover,
 .nav-item.active {
   background-color: var(--color-blue-50);
-  color: var(--color-blue-700);
-}
-
-.nav-item.active .nav-link {
-  color: var(--color-gray-800) !important;
-}
-
-.nav-link {
-  color: var(--color-gray-600) !important;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.nav-link:hover,
-.nav-link.active {
   color: var(--color-gray-800) !important;
 }
 
@@ -90,12 +83,13 @@ nav * {
   font-size: 1rem;
   color: var(--color-gray-800);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 }
 
 .user-name:hover {
   color: var(--color-gray-700);
+  font-family: Poppins;
 }
 
 .user-email {
@@ -106,23 +100,47 @@ nav * {
 
 .dropdown-item {
   cursor: pointer;
+  display: flex;
+  align-items: center
 }
 
 .profile-menu .dropdown-item:hover {
   background-color: var(--color-blue-50);
 }
 .mobile-buttons a .icon {
-  width: 1.45rem;
-  height: 1.45rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .mobile-buttons a:hover .icon {
   color: var(--color-blue-600) !important;
 }
 
+.header-username {
+  color: var(--color-gray-500);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 0.3rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-username:hover {
+  color: var(--color-gray-800);
+}
+
+
 @media (min-width: 992px) {
   .user-image {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .navbar-logo {
+    height: 2.5rem;
+    width: auto;
+  }
+
+  .nav-item {
+    font-size: var(--text-base);
   }
 }
